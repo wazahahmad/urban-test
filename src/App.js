@@ -1,12 +1,21 @@
-import logo from './logo.svg';
+
+import logo from './urban.jpeg';
 import './App.css';
 
 function App() {
+ 
+  
+  const screenW = window.screen.width
+  const screenH = window.screen.height
+  console.log(screenW, screenH)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+      <div className="App-header">
+        <img src={logo}
+        style={{objectFit:'contain', width:screenW, height:screenH}} 
+        // className="App-logo"
+         alt="logo" />
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -16,8 +25,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
+        </a> */}
+      </div>
     </div>
   );
 }
