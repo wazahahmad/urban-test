@@ -1,12 +1,9 @@
-import { useEffect } from 'react';
+
 import logo from './urban.jpeg';
 import './App.css';
-import ReactGA from 'react-ga';
-ReactGA.initialize('318609625');
+
 function App() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [])
+ 
   
   const screenW = window.screen.width
   const screenH = window.screen.height
