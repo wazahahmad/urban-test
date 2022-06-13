@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         <img src={logo}
-        style={{objectFit:'contain', width:screenW, height:screenH}} 
+        style={{objectFit:'contain'}} 
         // className="App-logo"
          alt="logo" />
         {/* <p>
